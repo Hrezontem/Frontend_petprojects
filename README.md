@@ -1,1 +1,1 @@
-<b>My pet-projects in frontend</b>
+<h1>My pet-projects in frontend</h1>
