@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slider</title>
+  <script src="index.js"></script>
+</head>
+<body>
+  <div class="slider">
+    <img src="./img1.jpg"/>
+    <img src="./img2.jpg"/>
+    <img src="./img3.jpg"/>
+    <button class="prev">Назад</button>
+    <button class="next">Вперед</button>
+    <div class="indicat">
+      <div class="indicat__item"></div>
+      <div class="indicat__item"></div>
+      <div class="indicat__item"></div>
+    </div>
+  </div>
+</body>
+<style>
+html, body {
+  width: 100%;
+  height: 100%;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider {
+  width: 1000px;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.slider .active {
+  opacity: 1;
+}
+
+.slider button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  font-size: 30px;
+  padding: 10px;
+}
+
+.slider .prev {
+  left: 10px;
+}
+
+.slider .next {
+  right: 10px;
+}
+.slider .indicat{
+  left: 43%;
+  position: absolute;
+  bottom: 40px;
+  display: flex;
+  gap: 20px;
+}
+.slider .indicat .indicat__item.active_indicat{
+  background-color: white;
+  transition: .5s ease;
+
+}
+.slider .indicat .indicat__item{
+  background-color: black;
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  border-radius: 40px;
+  z-index: 20;
+}
+</style>
+</html>
