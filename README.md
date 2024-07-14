@@ -1,1 +1,1 @@
-###My pet-projects in frontend
+<b>My pet-projects in frontend</b>
