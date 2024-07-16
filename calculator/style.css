@@ -37,6 +37,7 @@ body {
     color: white;
     cursor: pointer;
     outline: none;
+    user-select: none;ы
 
 }
 .btn:active {
