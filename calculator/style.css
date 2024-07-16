@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'Rubik';
+    src: url('./fonts/Rubik-VariableFont_wght.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+font-family: 'Rubik';
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(255,158,0,1) 0%, rgba(0,212,255,1) 100%);
+}
+
+.container {
+    display: inline-flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.btn {
+    background-color: rgb(71, 71, 237);
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 20px;
+    margin: 20px;
+    color: white;
+    cursor: pointer;
+    outline: none;
+
+}
+.btn:active {
+  filter: brightness(85%);
+}
+.container-btns {
+    display: flex;
+}
+.action-btns {
+    display: flex;
+    flex-direction: column;
+}
+
+.num-btns {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+}
+.action-btn {
+    background-color: orange;
+}
+.input-num {
+    display: flex;
+    justify-content: space-between;
+}
+input[type='text'] {
+    width: 100%;
+    margin: 20px;
+    padding: 10px;
+    font-size: 20px;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid rgb(204, 204, 204);
+}
+
+.delete-symbol {
+    background-color:  rgb(255, 78, 78);
+}
