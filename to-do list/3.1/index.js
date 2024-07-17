@@ -11,9 +11,14 @@ window.onload = () =>{
       const listitem = document.createElement("li")
       listitem.className = 'todo-list__item'
       num++
-      listitem.innerHTML = `  
-          <span>${input.value.trim()}</span>
+      listitem.innerHTML = `<div class="todo-list__item__inner">
+          <span class="todo-list__item__text">${input.value.trim()}</span>
+          <div class="status">
+            <label for="chk">Выполнено:</label>
+            <input id="chk" type="checkbox">
+          </div>
           <button class="todo-list__item__delete"></button>
+          </div>
        `
         listitem.querySelector(".todo-list__item__delete").addEventListener('click', () =>{
           list.removeChild(listitem)

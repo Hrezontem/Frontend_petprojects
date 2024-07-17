@@ -4,35 +4,36 @@
   font-weight: normal;
   font-style: normal;
 }
-*{
+
+* {
   font-family: 'Rubik';
 }
-html{
+html {
   min-height: 100%;
 }
-html, body{
+html, body {
   padding: 0;
   margin: 0;
 }
-body{
+body {
   background-repeat: no-repeat;
   background-size: cover;
   background: rgb(254,255,22);
   background: linear-gradient(148deg, rgba(254,255,22,1) 0%, rgba(14,137,217,1) 100%);
 }
-h1{
+h1 {
   text-align: center;
 }
-li{list-style-position:inside;}
+li {list-style-position:inside;}
 
-.container{
+.container {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 50px;
   width: 600px;
 }
-.insert-text{
+.insert-text {
   padding: 20px;
   background-color: white;
   border-radius: 10px;
@@ -40,19 +41,19 @@ li{list-style-position:inside;}
   gap: 40px;
   justify-content: space-between;
 }
-.insert-text__btn{
+.insert-text__btn {
   background-color: #ECF624;
   border: none;
   border-radius: 10px;
   padding: 20px;
   font-size: 20px;
 }
-.insert-text__input{
+.insert-text__input { 
   border: none;
   outline: none;
   font-size: 20px;
 }
-.todo-list{
+.todo-list {
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -61,17 +62,41 @@ li{list-style-position:inside;}
   font-size: 20px;
 }
 
-.todo-list__item__delete{
+.todo-list__item__delete {
   background-image: url("./icons/trash-svgrepo-com.svg");
   background-size: cover;
   background-color: #f3ff0f00;
   border: none;
   float: right;
-  padding: 25px;
+  width: 65px;
+  height: 65px;
 }
 
-.empty-list{
+.empty-list {
   margin: 0 auto;
-  color: grey;
+  color: rgb(190, 190, 190);
 }
 
+.todo-list__item {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(241, 241, 241);
+}
+
+.todo-list__item__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo-list__item__text {
+  display: inline-block;
+  width: 30%;
+  word-wrap: break-word;
+}
+
+.status {
+  display: flex;
+  gap: 10px;
+}

@@ -41,6 +41,9 @@ window.onload = () => {
             c = a*b
             
         }
+        else if(action == 'x²'){
+            c = a*a
+        }
         input.value = c
     })
     deleteSymbol.addEventListener('click', () => {
@@ -58,5 +61,6 @@ window.onload = () => {
             input.value += dot.innerHTML
         }
     })
+
 
 }

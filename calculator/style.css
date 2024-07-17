@@ -4,6 +4,11 @@
     font-weight: normal;
     font-style: normal;
 }
+@keyframes ani {
+    0% {transform: translateX(-150%);}
+    100% {transform: translateY(0);}
+}
+
 * {
 font-family: 'Rubik';
 }
@@ -25,6 +30,7 @@ body {
     flex-direction: column;
     background-color: white;
     border-radius: 10px;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
 }
 
 .btn {
@@ -37,7 +43,7 @@ body {
     color: white;
     cursor: pointer;
     outline: none;
-    user-select: none;ы
+    user-select: none;
 
 }
 .btn:active {
@@ -47,8 +53,10 @@ body {
     display: flex;
 }
 .action-btns {
+    background-color: white;
+    border-radius: 10px;
     display: flex;
-    flex-direction: column;
+    flex-flow: column wrap;
 }
 
 .num-btns {
@@ -72,6 +80,28 @@ input[type='text'] {
     border: 1px solid rgb(204, 204, 204);
 }
 
-.delete-symbol {
+.delete-all {
     background-color:  rgb(255, 78, 78);
+    
+}
+
+.delete-btns button{
+    width: 100%;
+}
+
+.delete-btns{
+    display: flex;
+}
+
+.btn-display-actions{
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+    background-image: url("./lcons/arrow.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color:rgba(240, 248, 255, 0);
+    align-self: center;
+    cursor: pointer;
+    border: none;
 }
