@@ -14,8 +14,10 @@ document.addEventListener("DOMContentLoaded", () => {
     gameItem.forEach((item) => {
         let flag = false;
          item.addEventListener('click', function clickTTT(){
-            item.innerHTML = (turn == false && flag === false) ? 'X': 'O'
-            turn = !turn;
+            if (flag === false){
+                item.innerHTML = (turn == false) ? 'X': 'O'
+                turn = !turn;
+            }
  
             if(flag === false){
                 for(let i = 0; i < gameMap.length; i++){
