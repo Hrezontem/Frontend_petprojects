@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'Rubik';
+    src: url('./fonts/Rubik-VariableFont_wght.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    font-family: 'Rubik';
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    background-color: rgb(200, 200, 200);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+.game {
+    display: grid;
+    grid-template-columns: repeat(3, 120px);
+    grid-template-rows: repeat(3, 120px);
+    align-items: center;
+    justify-items: center;
+}
+.game__item {
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-sizing: border-box;
+    user-select: none;
+}
+.game__item:hover {
+    filter: opacity(40%);
+}
+
+.reset {
+    padding: 20px;
+}
