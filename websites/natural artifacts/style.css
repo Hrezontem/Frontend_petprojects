@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'OpenSans';
+  font-weight: normal;
+  font-style: normal;
+  src: url('./fonts/OpenSans-VariableFont_wdth\,wght.ttf');
+}
+
+body {
+  background-color: #1D2F30;
+  font-family: 'OpenSans';
+}
+
+a {
+  text-decoration: none;
+  color: white;
+
+}
+
+.header__inner{
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__logo {
+  display: flex;
+  margin-right: 125px;  
+}
+
+.header__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  gap: 64px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.logo-img {
+  width: inherit;
+  height: inherit;
+}
