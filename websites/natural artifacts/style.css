@@ -6,6 +6,20 @@
 }
 
 @font-face {
+  font-family: 'OpenSans';
+  font-weight: 600;
+  font-style: normal;
+  src: url('./fonts/OpenSans/static/OpenSans-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  font-weight: bold;
+  font-style: normal;
+  src: url('./fonts/OpenSans/static/OpenSans-Bold.ttf');
+}
+
+@font-face {
   font-family: 'Cormorant';
   font-weight: normal;
   font-style: normal;
@@ -27,6 +41,8 @@
   --dark: #0B1919;
   --green-text: #506829;
   --green-hover: #91AC46;
+  --green-active: #688B05;
+  --green-focus: #83A440;
   --gray: #899D9D;
 }
 
@@ -83,15 +99,36 @@ a {
   gap: 64px;
 }
 
-.header__menu-link:hover{
-  color: var(--primary-green);
+.header__menu-link {
   transition: ease .2s;
+
 }
 
-.header__btns {
+.header__menu-link:hover{
+  color: var(--primary-green);
+}
+
+.header__menu-link:active {
+  color: var(--green-hover);
+}
+
+.header__buttons {
     display: flex;
     gap: 64px;
-    margin-left: 265px;
+}
+
+.header__buttons__item {
+  transition: ease .2s;
+
+}
+
+.header__buttons__item:hover {
+  filter: brightness(80%);
+}
+
+.header__buttons__item:active {
+  filter: brightness(60%);
+
 }
 
 .logo {
@@ -129,8 +166,6 @@ a {
   z-index: 0;
 }
 
-
-
 .text {
   font-family: 'OpenSans';
   line-height: 170%;
@@ -153,11 +188,23 @@ a {
   display: flex;
   align-items: center;
   gap: 8px;
+  transition: ease .2s;
+}
+
+.arrow:hover {
+  filter: brightness(80%);
+}
+
+.arrow:active {
+  filter: brightness(60%);
+
 }
 
 .arrow-text {
   color: var(--primary-green);
 }
+
+
 
 .article__arrow-img.arrow-img {
   background-image: url('./img/Arrow\ dark.svg');
@@ -238,6 +285,16 @@ a {
 
 }
 
+.card__button:disabled {
+  border: 1px solid var(--gray);
+  color: var(--gray)
+}
+
+.card__button:hover:disabled {
+  border: 1px solid var(--gray);
+  color: var(--gray)
+}
+
 .cards__pagination {
   display: flex;
   align-items: center;
@@ -256,6 +313,16 @@ a {
   background-size: contain;
   background-position: center;
   cursor: pointer;
+  transition: ease .2s;
+}
+
+.arrow-pag:hover {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(25%) saturate(5181%) hue-rotate(17deg) brightness(96%) contrast(84%);
+
+}
+
+.arrow-pag:active {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(25%) saturate(5181%) hue-rotate(17deg) brightness(60%) contrast(84%);
 }
 
 .arrow-pag-reverse {
@@ -284,6 +351,17 @@ a {
 
 .article__arrow {
   margin: auto 0 0 0;
+  transition: ease .2s;
+}
+
+.article__arrow:hover {
+  filter: invert(70%) sepia(69%) saturate(6089%) hue-rotate(47deg) brightness(88%) contrast(96%);
+}
+
+.article__arrow:active {
+  filter: invert(70%) sepia(69%) saturate(6089%) hue-rotate(47deg) brightness(1%) contrast(96%);
+
+
 }
 
 .article__text-header {
@@ -324,20 +402,38 @@ a {
 }
 
 .form-message__text {
-  width: 825px;
+  width: 45vw;
 }
 
 .form-message__info {
   margin-bottom: 24px;
 }
 
-.form-massage__input {
+.form-message__input {
   margin-bottom: 24px;
   height: 45px;
   width: 450px;
   padding-left: 16px;
   font-size: 16px;
+  font-family: 'OpenSans';
+  font-weight: 600;
   border: none;
+  transition: ease .2s;
+}
+
+.form-message__input:hover::placeholder {
+  color: white;
+
+}
+
+.form-message__input:hover {
+  background-color: var(--gray);
+
+}
+
+.form-message__input:focus {
+  background-color: var(--gray);
+  color: var(--dark);
 }
 
 .form-message__button {
@@ -348,6 +444,10 @@ a {
 
 .form-message__button:hover {
   background-color: var(--green-hover);
+}
+
+.form-message__button:active {
+  background-color: var(--green-active);
 }
 
 .footer {
@@ -367,6 +467,10 @@ a {
 .social__item {
   width: 24px;
   height: 24px;
+  transition: ease-out .2s;
+  
+
+
 }
 
 .social__item:nth-child(1){
@@ -385,6 +489,14 @@ a {
   background-image: url('./img/Frame-1.svg');
 }
 
+.social__item:hover {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(25%) saturate(5181%) hue-rotate(17deg) brightness(90%) contrast(84%);
+}
+
+.social__item:active {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(25%) saturate(5181%) hue-rotate(17deg) brightness(60%) contrast(84%);
+}
+
 .copyright {
   align-self: center;
   color: var(--gray);
@@ -401,4 +513,17 @@ a {
 
 .mg-top-60px {
   margin-top: 60px;
+}
+
+:focus-visible {
+  outline:  2px solid var(--green-focus);
+  outline-offset: 2px;
+
+}
+
+
+@media (max-width: 1400px) {
+  .cards__inner {
+    flex-wrap: wrap;
+  }
 }
