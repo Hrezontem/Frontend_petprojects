@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if (flag === false && endGame === false){
                 item.innerHTML = (turn == false) ? 'X': 'O'
                 turn = !turn;
-                for (var i = 0; i < 2; i++){
+                for (var i = 0; i < 3; i++){
                     if ((gameMapHorizontal[i].every(v => v.innerHTML === 'X')) === true || (gameMapHorizontal[i].every(v => v.innerHTML === 'O')) === true) {
                         endGame = true
                         break
