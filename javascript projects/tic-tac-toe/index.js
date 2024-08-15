@@ -31,19 +31,19 @@ document.addEventListener("DOMContentLoaded", () => {
                 item.innerHTML = (turn == false) ? 'X': 'O'
                 turn = !turn;
                 for (var i = 0; i < 3; i++){
-                    if ((gameMapHorizontal[i].every(v => v.innerHTML === 'X')) === true || (gameMapHorizontal[i].every(v => v.innerHTML === 'O')) === true) {
+                    if ((gameMapHorizontal[i].every(v => v.innerHTML === 'X')) || (gameMapHorizontal[i].every(v => v.innerHTML === 'O'))) {
                         endGame = true
                         break
                     }
-                    else if ((gameMapVertical[i].every(v => v.innerHTML === 'X')) === true || (gameMapVertical[i].every(v => v.innerHTML === 'O')) === true) {
+                    else if ((gameMapVertical[i].every(v => v.innerHTML === 'X')) || (gameMapVertical[i].every(v => v.innerHTML === 'O')) ) {
                         endGame = true
                         break
                     }
-                    else if ((gameMapDiagonal.every(v => v.innerHTML === 'X')) === true || (gameMapDiagonal.every(v => v.innerHTML === 'O')) === true) {
+                    else if ((gameMapDiagonal.every(v => v.innerHTML === 'X')) || (gameMapDiagonal.every(v => v.innerHTML === 'O')) ) {
                         endGame = true
                         break
                     }
-                    else if ((gameMapDiagonalReverse.every(v => v.innerHTML === 'X')) === true || (gameMapDiagonalReverse.every(v => v.innerHTML === 'O')) === true) {
+                    else if ((gameMapDiagonalReverse.every(v => v.innerHTML === 'X'))  || (gameMapDiagonalReverse.every(v => v.innerHTML === 'O')) ) {
                         endGame = true
                         break
                     }
