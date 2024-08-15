@@ -1,5 +1,3 @@
-
-
 document.addEventListener("DOMContentLoaded", () => {
     const gameItem = Array.from(document.querySelectorAll('.game__item'));
     const resetBtn = document.querySelector('.reset');
@@ -21,12 +19,10 @@ document.addEventListener("DOMContentLoaded", () => {
             indexGameItem++;
         }
     }
-    console.log(gameMapHorizontal)
     for (let row = 0; row < gameMapHorizontal.length; row++) {
         gameMapDiagonal.push(gameMapHorizontal[row][row]);
         gameMapDiagonalReverse.push(gameMapHorizontal[row][gameMapHorizontal.length - row - 1]);
     }
-    console.log(gameMapDiagonalReverse)
     gameMapVertical = gameMapHorizontal.map((val, index) => gameMapHorizontal.map(row => row[index]).reverse())
     gameItem.forEach((item) => {
         let flag = false;
@@ -36,26 +32,18 @@ document.addEventListener("DOMContentLoaded", () => {
                 turn = !turn;
                 for (var i = 0; i < 2; i++){
                     if ((gameMapHorizontal[i].every(v => v.innerHTML === 'X')) === true || (gameMapHorizontal[i].every(v => v.innerHTML === 'O')) === true) {
-                        console.log('WIN')
-                        console.log(turn)
                         endGame = true
                         break
                     }
                     else if ((gameMapVertical[i].every(v => v.innerHTML === 'X')) === true || (gameMapVertical[i].every(v => v.innerHTML === 'O')) === true) {
-                        console.log('WIN')
-                        console.log(turn)
                         endGame = true
                         break
                     }
                     else if ((gameMapDiagonal.every(v => v.innerHTML === 'X')) === true || (gameMapDiagonal.every(v => v.innerHTML === 'O')) === true) {
-                        console.log('WIN')
-                        console.log(turn)
                         endGame = true
                         break
                     }
                     else if ((gameMapDiagonalReverse.every(v => v.innerHTML === 'X')) === true || (gameMapDiagonalReverse.every(v => v.innerHTML === 'O')) === true) {
-                        console.log('WIN')
-                        console.log(turn)
                         endGame = true
                         break
                     }
