@@ -21,6 +21,9 @@
 :root {
   --primary: #46F4DB;
   --primary-active: #57D272;
+  --red: #D13130;
+  --grey-light: #EDEDF2;
+  --gray-middle: #95959D;
 }
 
 *{
@@ -31,6 +34,12 @@
 h1 {
   font-family: 'RussoOne';
   font-weight: bold;
+}
+
+h2 {
+  font-family: 'RussoOne';
+  font-weight: bold;
+  font-size: 60px;
 }
 
 body{
@@ -184,7 +193,134 @@ body{
   color: white;
 }
 
+/* Auction */
+.section__auction {
+  display: flex;
+  flex-direction: column;
+}
 
+.auction__block {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.auction__status {
+  padding: 9.5px 15px 9.5px 15px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  border: 2px solid var(--red);
+  border-radius: 77px;
+  color: var(--red);
+  font-weight: bold;
+}
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 100px;
+  background-color: var(--red);
+}
+
+.auction__inner {
+  display: flex;
+  gap: 32px;
+}
+
+.auction-sticker {
+  width: 460px;
+  height: 460px;
+}
+
+.sticker-info {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.sticker-user {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  background-color: var(--grey-light);
+  padding: 11px 16px 11px 16px;
+  border-radius: 23px;
+  gap: 16px;
+}
+
+.sticker-name {
+  font-size: 48px;
+  font-weight: normal;
+}
+
+.sticker__block {
+  display: flex;
+  gap: 32px;
+}
+
+.sticker-cost {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  background-color: var(--grey-light);
+  border-radius: 23px;
+
+}
+
+.auction-timer {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  background-color: black;
+  padding: 32px;
+  border-radius: 23px;
+  color: white;
+  font-weight: bold;
+  gap: 44px;
+}
+
+.auction-timer__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.auction__button {
+  width: fit-content;
+  padding: 25px 74px 25px 74px;;
+  background-color: var(--primary);
+}
+
+
+.timer {
+  display: flex;
+  gap: 26px;
+}
+.timer__number-item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.timer-number {
+  font-size: 48px;
+}
+
+.sticker-cost__text-header {
+  font-weight: bold;
+  width: fit-content;
+}
+.cost-crypt {
+  font-weight: bold;
+  font-size: 48px;
+  width: fit-content;
+
+}
+.cost-translate {
+  font-weight: bold;
+  color: var(--gray-middle);
+  width: fit-content;
+}
 
 /* Footer */
 .footer {

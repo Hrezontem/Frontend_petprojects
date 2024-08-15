@@ -41,17 +41,19 @@
       </div>
     </div>
     <section class="section__auction section mg-lr">
-      <h2 class="section__text-header text-header">Аукцион</h2>
-      <div class="auction__status">
-        <div class="dot"></div>
-        <span class="status-text"></span>
+      <div class="auction__block">
+        <h2 class="section__text-header text-header">Аукцион</h2>
+        <div class="auction__status">
+          <div class="dot"></div>
+          <span class="status-text">Live auction</span>
+        </div>
       </div>
       <div class="section__inner auction__inner">
-        <div class="auction-sticker"></div>
+        <img src="./img/auction-sticker.png" class="auction-sticker"/>
         <div class="sticker-info">
           <div class="sticker-user">
-            <div class="user__img"></div>
-            <span class="sticker-user__username username"></span>
+            <img src="./img/user-avatar.png" alt="" class="user__img"/>
+            <span class="sticker-user__username username">Serge_VM222</span>
           </div>
           <h3 class="sticker-name">Witcherrr_3 (xml_t5)</h3>
           <div class="sticker__block">
@@ -62,7 +64,7 @@
             </div>
             <div class="auction-timer">
               <div class="auction-timer__inner">
-                <span class="auction-timer__text-header"></span>
+                <span class="auction-timer__text-header">Окончание через:</span>
                 <div class="timer">
                   <div class="timer__number-item">
                     <span class="timer-number">01</span>
@@ -78,10 +80,10 @@
                   </div>
                 </div>
               </div>
-              <img src="" alt="" class="auction-timer__img">
+              <img src="./img/clock.svg" alt="" class="auction-timer__img">
             </div>
           </div>
-          <button class="auction__button buttton"></button>
+          <button class="auction__button button">Сделать ставку</button>
         </div>
       </div>
     </section>
@@ -89,11 +91,42 @@
       <h3 class="auction-list__text-header">Другие аукционы</h3>
       <div class="auction-list__inner">
         <div class="auction-list__card card">
-          <div class="card-img">
+          <img src="" alt="" class="card-img"/>
+          <div class="card-info">
+            <div class="card-info__user">
+              <img src="" alt="" class="user-img">
+              <span class="username"></span>
+            </div>
+            <div class="card-info__name"></div>
+            <div class="card-info__cost"></div>
+            <div class="card-info__time"></div>
           </div>
         </div>
       </div>
+      <button class="auction-list__button button--transparent button"></button>
     </section>
+    <section class="slider">
+      <div class="slider__inner mg-lr">
+      <h2 class="slider__text-header text-header"></h2>
+      <div class="slides">
+        <div class="slides__item">
+          <img src="" alt="" class="slide__item">
+        </div>
+      </div>
+      <div class="slider__pagination"></div>
+      </div>
+    </section>
+    <form action="" class="form-subscribe">
+      <div class="form-subscribe__inner">
+        <h3 class="form-subscribe__text-header"></h3>
+        <input type="text" class="form-subscribe__input">
+        <input type="email" class="form-subscribe__input">
+        <button class="form-subscribe__butto button">Подписаться</button>
+        <input type="checkbox" name="" id="personal">
+        <label for="personal">Согласен на обработку персональных данных</label>
+
+      </div>
+    </form>
   </main>
   <footer class="footer">
     <div class="footer__inner">
