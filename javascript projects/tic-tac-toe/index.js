@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 item.innerHTML = (turn == false) ? 'X': 'O'
                 turn = !turn;
                 for (var i = 0; i < 3; i++){
-                    if ((gameMapHorizontal[i].every(v => v.innerHTML === 'X')) || (gameMapHorizontal[i].every(v => v.innerHTML === 'O'))) {
+                    if ((gameMapHorizontal[i].every(v => v.innerHTML === 'X' || v.innerHTML === 'O'))){
                         endGame = true
                         break
                     }
