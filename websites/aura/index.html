@@ -29,7 +29,7 @@
     </div>
   </header>
   <main class="main">
-    <div class="hero">
+    <section class="hero">
       <div class="hero__inner mg-lr">
         <h1 class="hero__text-header">Площадка для реализации криптостикеров</h1>
         <div class="hero__buttons">
@@ -39,8 +39,8 @@
           </div>
         </div>
       </div>
-    </div>
-    <section class="section__auction section mg-lr">
+    </section>
+    <section class="section__auction mg-lr mg-tb">
       <div class="auction__block">
         <h2 class="section__text-header text-header">Аукцион</h2>
         <div class="auction__status">
@@ -87,7 +87,7 @@
         </div>
       </div>
     </section>
-    <section class="section__auction-list mg-lr">
+    <section class="section__auction-list mg-lr mg-tb">
       <h3 class="auction-list__text-header">Другие аукционы</h3>
       <div class="auction-list__inner">
         <div class="auction-list__card card">
@@ -211,15 +211,77 @@
       </div>
     </section>
     <form action="" class="form-subscribe">
-      <h3 class="form-subscribe__text-header">Будь в курсе новинок! Подпишись на рассылку!</h3>
-      <div class="form-subscribe__inner">
+      <div class="form-subscribe__inner mg-lr">
+        <h3 class="form-subscribe__text-header">Будь в курсе новинок! Подпишись на рассылку!</h3>
         <input type="text" placeholder="Имя" class="form-subscribe__input">
         <input type="email" placeholder="E-mail" class="form-subscribe__input">
-        <button class="form-subscribe__butto button">Подписаться</button>
-        <input type="checkbox" name="" id="personal">
-        <label for="personal">Согласен на обработку персональных данных</label>
+        <button class="form-subscribe__button button">Подписаться</button>
+        <div class="checkbox__block">
+          <input type="checkbox" name="" id="personal">
+          <label for="personal">Согласен на обработку персональных данных</label>
+        </div>
       </div>
     </form>
+    <section class="section__feedback mg-lr mg-tb">
+      <div class="feedback__inner">
+        <h2 class="feedback__text-header text-header">Стать автором</h2>
+        <h3 class="fee">Если ты художник или стремишься им стать — добро пожаловать к нам!</h3>
+        <p>Отправь нам от трёх до пяти своих работ и напиши свой ник в телеграме. Если наши кураторы решат, что нам по пути, то мы обязательно свяжемся с тобой и обговорим условия сотрудничества! Удачи!</p>
+        <div class="feedback__image"></div>
+      </div>
+      <div class="feedback__inner">
+        <form class="upload-photo" method="post" enctype="multipart/form-data">
+          <input type="file" name="file[]" multiple accept="image/*">
+          <input type="text" required>	
+          <button class="feedback__button button">Отправить</button>	
+        </form>
+      </div>
+    </section>
+    <section class="section__top-sale">
+      <div class="top-sale__inner ">
+        <h2 class="top-sale__text-header text-header">Топ продаж</h2>
+        <div class="top-sale__list">
+          <div class="top-sale__item">
+            <img src="./img/Holofobia-1 1.png" alt="" class="top-sale__sticker">
+            <div class="top-sale__item-info">
+                <div class="top-sale__user">
+                  <img src="./img/Ellipse 2.png" alt="" class="user-img">
+                  <span class="username">ttgs</span>
+                </div>
+                <div class="top-sale__sticker-name">Holofobia1</div>
+                <div class="top-sale__cost">4.70 ETH ($16,873.47)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section__top-requirements">
+      <div class="top-requirements__inner mg-lr">
+        <div class="top-requirements__info">
+          <span class="list-text-header">Для попадания в топ необходимо:</span>
+          <ul class="top-requirements__list">
+            <li class="top-requirements__item">
+              <div class="top-requirements__item-inner">
+                <img src="./img/require1.svg" alt="">
+                <span>Минимум пять опубликованных работ</span>
+              </div>
+            </li>
+            <li class="top-requirements__item">
+              <div class="top-requirements__item-inner">
+                <img src="./img/require2.svg" alt="">
+                <span>Инвайт трём коллегам по цеху</span>
+              </div>
+            </li>
+            <li class="top-requirements__item">
+              <div class="top-requirements__item-inner">
+                <img src="./img/require3.svg" alt="">
+                <span>Верифицированный аккаунт</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
   </main>
   <footer class="footer">
     <div class="footer__inner">
