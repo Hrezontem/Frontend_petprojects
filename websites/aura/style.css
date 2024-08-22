@@ -591,8 +591,15 @@ body{
   z-index: 0;
 }
 
+.top-sale__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
 .top-sale__item{
   display: flex;
+  width: fit-content;
   align-items: center;
   background-color: var(--grey-light);
   border-radius: 40px;
@@ -601,9 +608,27 @@ body{
 .top-sale__item-info {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  gap: 9px;
   background-color: white;
-  padding: 41px;
+  height: 160px;
   z-index: 1;
+  font-weight: bold;
+  box-sizing: border-box;
+  padding-left: 32px;
+  padding-right: 200px;
+  border-radius: 0 40px 40px 0;
+
+}
+
+.top-sale__user {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.top-sale__sticker-name {
+  font-size: 48px;
 }
 
 .list-text-header {
