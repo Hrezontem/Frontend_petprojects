@@ -211,28 +211,39 @@
       </div>
     </section>
     <form action="" class="form-subscribe">
-      <div class="form-subscribe__inner mg-lr">
+      <div class="form-subscribe__inner ">
         <h3 class="form-subscribe__text-header">Будь в курсе новинок! Подпишись на рассылку!</h3>
         <input type="text" placeholder="Имя" class="form-subscribe__input">
         <input type="email" placeholder="E-mail" class="form-subscribe__input">
         <button class="form-subscribe__button button">Подписаться</button>
         <div class="checkbox__block">
-          <input type="checkbox" name="" id="personal">
-          <label for="personal">Согласен на обработку персональных данных</label>
+          <input type="checkbox" name="" id="personal" class="form-subscribe__checkbox">
+          <label for="personal">
+            Согласен на обработку персональных данных
+          </label>
         </div>
       </div>
+      <img src="./img/Frame 29.png" alt="" class="form-subscribe__background-img">
     </form>
     <section class="section__feedback mg-lr mg-tb">
       <div class="feedback__inner">
-        <h2 class="feedback__text-header text-header">Стать автором</h2>
-        <h3 class="fee">Если ты художник или стремишься им стать — добро пожаловать к нам!</h3>
-        <p>Отправь нам от трёх до пяти своих работ и напиши свой ник в телеграме. Если наши кураторы решат, что нам по пути, то мы обязательно свяжемся с тобой и обговорим условия сотрудничества! Удачи!</p>
-        <div class="feedback__image"></div>
+        <div class="feedback__info">
+          <h2 class="feedback__text-header text-header">Стать автором</h2>
+          <h3 class="feedback__slogan">Если ты художник или стремишься им стать — добро пожаловать к нам!</h3>
+          <p class="feedback__text">Отправь нам от трёх до пяти своих работ и напиши свой ник в телеграме. Если наши кураторы решат, что нам по пути, то мы обязательно свяжемся с тобой и обговорим условия сотрудничества! <b>Удачи!</b></p>
+        </div>
+        <img src="./img/sticker-feedback.png" alt="" class="feedback__image"></ш>
       </div>
       <div class="feedback__inner">
-        <form class="upload-photo" method="post" enctype="multipart/form-data">
-          <input type="file" name="file[]" multiple accept="image/*">
-          <input type="text" required>	
+        <form class="feedback__form" method="post" enctype="multipart/form-data">
+          <div class="feedback__upload-photo">
+            <div class="upload__container">
+              <label class="upload__button" for="upload"></label>
+              <input type="file" name="file[]" multiple accept="image/*" id="upload" class="feedback__input--file">
+            </div>
+            <span class="upload-photo__text">Прикрепить работы (.jpeg / .png)</span>
+          </div> 
+          <input type="text" placeholder="@telegram_nickname" class="feedback__input--text" required>	
           <button class="feedback__button button">Отправить</button>	
         </form>
       </div>
@@ -248,8 +259,8 @@
                   <img src="./img/Ellipse 2.png" alt="" class="user-img">
                   <span class="username">ttgs</span>
                 </div>
-                <div class="top-sale__sticker-name">Holofobia1</div>
-                <div class="top-sale__cost">4.70 ETH ($16,873.47)</div>
+                <span class="top-sale__sticker-name">Holofobia1</span>
+                <span class="top-sale__cost">4.70 ETH <span class="cost-translate">($16,873.47)</span></span>
             </div>
           </div>
           <div class="top-sale__item">
@@ -259,8 +270,8 @@
                   <img src="./img/Ellipse 2.png" alt="" class="user-img">
                   <span class="username">ttgs</span>
                 </div>
-                <div class="top-sale__sticker-name">Holofobia1</div>
-                <div class="top-sale__cost">4.70 ETH ($16,873.47)</div>
+                <span class="top-sale__sticker-name">Holofobia1</span>
+                <span class="top-sale__cost">4.70 ETH <span class="cost-translate">($16,873.47)</span></span>
             </div>
           </div>
           <div class="top-sale__item">
@@ -270,8 +281,8 @@
                   <img src="./img/Ellipse 2.png" alt="" class="user-img">
                   <span class="username">ttgs</span>
                 </div>
-                <div class="top-sale__sticker-name">Holofobia1</div>
-                <div class="top-sale__cost">4.70 ETH ($16,873.47)</div>
+                <span class="top-sale__sticker-name">Holofobia1</span>
+                <span class="top-sale__cost">4.70 ETH <span class="cost-translate">($16,873.47)</span></span>
             </div>
           </div>
           <div class="top-sale__item">
@@ -281,8 +292,8 @@
                   <img src="./img/Ellipse 2.png" alt="" class="user-img">
                   <span class="username">ttgs</span>
                 </div>
-                <div class="top-sale__sticker-name">Holofobia1</div>
-                <div class="top-sale__cost">4.70 ETH ($16,873.47)</div>
+                <span class="top-sale__sticker-name">Holofobia1</span>
+                <span class="top-sale__cost">4.70 ETH <span class="cost-translate">($16,873.47)</span></span>
             </div>
           </div>
           <div class="top-sale__item">
@@ -292,8 +303,8 @@
                   <img src="./img/Ellipse 2.png" alt="" class="user-img">
                   <span class="username">ttgs</span>
                 </div>
-                <div class="top-sale__sticker-name">Holofobia1</div>
-                <div class="top-sale__cost">4.70 ETH ($16,873.47)</div>
+                <span class="top-sale__sticker-name">Holofobia1</span>
+                <span class="top-sale__cost">4.70 ETH <span class="cost-translate">($16,873.47)</span></span>
             </div>
           </div>
           <div class="top-sale__item">
@@ -303,8 +314,8 @@
                   <img src="./img/Ellipse 2.png" alt="" class="user-img">
                   <span class="username">ttgs</span>
                 </div>
-                <div class="top-sale__sticker-name">Holofobia1</div>
-                <div class="top-sale__cost">4.70 ETH ($16,873.47)</div>
+                <span class="top-sale__sticker-name">Holofobia1</span>
+                <span class="top-sale__cost">4.70 ETH <span class="cost-translate">($16,873.47)</span></span>
             </div>
           </div>
         </div>
