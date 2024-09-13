@@ -32,28 +32,33 @@
 *{
   margin: 0;
   padding: 0;
+
 }
 
 h1 {
   font-family: 'RussoOne';
   font-weight: bold;
+
 }
 
 h2 {
   font-family: 'RussoOne';
   font-weight: bold;
   font-size: 60px;
+
 }
 
 h3 {
   font-family: 'RussoOne';
   font-weight: bold;
   font-size: 20px;
+
 }
 
 body{
   background-color: white;
   font-family: 'Muller';
+
 }
 
 .list{
@@ -62,6 +67,7 @@ body{
   gap: 32px;
 
 }
+
 .menu-link {
   text-decoration: none;
   color: black;
@@ -69,7 +75,9 @@ body{
   font-weight: bold;
   font-size: 20px;
   transition: ease .2s;
+
 }
+
 .button {
   font-family: 'Muller';
   font-weight: bold;
@@ -78,6 +86,7 @@ body{
   border: none;
   transition: ease .2s;
   padding: 25px 80px 25px 80px;
+
 }
 
 .logo {
@@ -86,16 +95,19 @@ body{
   background-repeat: no-repeat;
   background-size: contain;
   background-image: url('./img/Vector.svg');
+
 }
 
 .mg-lr {
   margin-left: 320px;
   margin-right: 320px;
+
 }
 
 .mg-tb {
   margin-top: 90px;
   margin-bottom: 90px;
+
 }
 
 .gradient-box {
@@ -108,6 +120,7 @@ body{
 .hero__buttons__item.button--dark-bg {
   color: white;
   background: black;
+
 }
 
 /* Header */
@@ -117,10 +130,12 @@ body{
   top: 0;
   position: sticky;
   background-color: white;
+
 }
 
 .header__logo {
   margin-right: 64px;
+
 }
 
 .header__inner {
@@ -128,6 +143,7 @@ body{
   grid-template-columns: max-content 1fr 1fr;
   align-items: center;
   padding: 20px 0 20px 0;
+
 }
 
 .header__button {
@@ -135,25 +151,41 @@ body{
   padding: 17px 43px 17px 43px;
   color: white;
   justify-self: end;
+
+}
+
+.header__button-adaptive {
+  display: none;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-image: url('./img/header_wallet.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 
 .header__button:hover {
   background-color: var(--primary);
   color: black;
+
 }
 
 .header__button:active {
   background-color: var(--primary-active);
+
 }
 
 
 
 .header__menu-link:hover{
   color: var(--primary);
+
 }
 
 .header__menu-link:active{
   color: var(--primary-active);
+
 }
 
 /* Hero */
@@ -162,18 +194,22 @@ body{
   align-items: center;
   width: 100%;
   height: 680px;
+  background-size: cover;
   background-image: url('./img/hero.png');
+
 }
 
 .hero__inner {
   display: flex;
   flex-direction: column;
   gap: 36px;
+
 }
 
 .hero__buttons {
   display: flex;
   gap: 32px;
+
 }
 
 .hero__buttons__item {
@@ -184,15 +220,18 @@ body{
 
 .hero__buttons__item:hover {
   background: var(--primary);
+
 }
 
 .hero__buttons__item:active {
   background: var(--primary-active);
+
 }
 
 .hero__buttons__item.button--dark-bg:hover {
   background-color: rgba(0, 0, 0, 0);
   color: black;
+
 }
 
 .gradient-box:active {
@@ -207,18 +246,21 @@ body{
   width: 651px;
   font-size: 70px;
   color: white;
+
 }
 
 /* Auction */
 .section__auction {
   display: flex;
   flex-direction: column;
+
 }
 
-.auction__block {
+.auction__header {
   display: flex;
   align-items: center;
   gap: 16px;
+
 }
 
 .auction__status {
@@ -230,29 +272,36 @@ body{
   border-radius: 77px;
   color: var(--red);
   font-weight: bold;
+
 }
+
 .dot {
   width: 6px;
   height: 6px;
   border-radius: 100px;
   background-color: var(--red);
+
 }
 
 .auction__inner {
   display: flex;
-  gap: 32px;
+  justify-content: space-between;
+
 }
 
 .auction-sticker {
   width: 460px;
   height: 460px;
+
 }
 
 .sticker-info {
   display: flex;
   flex-direction: column;
   gap: 32px;
+
 }
+
 .sticker-user {
   width: fit-content;
   display: flex;
@@ -261,16 +310,19 @@ body{
   padding: 11px 16px 11px 16px;
   border-radius: 23px;
   gap: 16px;
+
 }
 
 .sticker-name {
   font-size: 48px;
   font-weight: normal;
+
 }
 
 .sticker__block {
   display: flex;
   gap: 32px;
+
 }
 
 .sticker-cost {
@@ -289,11 +341,13 @@ body{
   display: flex;
   align-items: center;
   background-color: black;
-  padding: 32px;
-  border-radius: 23px;
+  padding-left: 32px;
+  padding-right: 32px;
+  gap: 40px;
+  border-radius: 40px;
   color: white;
   font-weight: bold;
-  gap: 44px;
+
 }
 
 .auction-timer__inner {
@@ -333,7 +387,6 @@ body{
 
 .auction__button:active::before{
   transition: ease .2s;
-
   background: var(--primary-active);
 }
 
@@ -349,7 +402,7 @@ body{
   flex-direction: column;
   background-color: black;
   border-radius: 0 0 40px 40px;
-  padding: 32px 16px 32px 16px;
+  padding: 16px 16px 32px 16px;
   gap: 12px;
 
 }
@@ -399,7 +452,7 @@ body{
   display: grid;
   box-sizing: content-box;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 32px;
+  grid-gap: 26px;
 }
 
 .auction-list__button {
@@ -430,6 +483,7 @@ body{
   display: flex;
   gap: 26px;
 }
+
 .timer__number-item {
   display: flex;
   align-items: center;
@@ -461,17 +515,20 @@ body{
 .slider{
   background-color: black;
 }
+
 .slider__inner {
   display: flex;
   flex-direction: column;
   padding-top: 90px;
   padding-bottom: 90px;
 }
+
 .slider-header{
   display: flex;
   align-items: center;
   gap: 16px;
 }
+
 .slider__text-header {
   width: fit-content;
   margin-top: 10px;
@@ -849,6 +906,28 @@ body{
   display: flex;
   align-items: center;
   gap: 8px;
+}
+
+
+
+/* Adaptive */
+
+
+@media (max-width: 320px) {
+  
+  .header__menu-link {
+    font-size: 16px;
+  }
+  
+  .header__button {
+    display: none;
+  
+  }
+
+  .header__button-adaptive {
+    display: block;
+
+  }
 }
 
 /* Footer */
