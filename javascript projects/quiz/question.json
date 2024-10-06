@@ -1,0 +1,50 @@
+{
+    "question1": {
+        "textQuestion": "2+2 = 4?",
+        "answers": {
+            "a1" : {
+                "name": "Да",
+                "correctAnswer": true
+            },
+            "a2" : {
+                "name": "Нет",
+                "correctAnswer": false
+            },
+            "a3" : {
+                "name": "Ты кто",
+                "correctAnswer": false
+            },
+            "a4" : {
+                "name": "Было дело",
+                "correctAnswer": false
+            }
+        }
+    },
+    "question2": {
+        "textQuestion": "2+1 = 6?",
+        "answers": {
+            "a1" : {
+                "name": "Нет",
+                "correctAnswer": true
+            },
+            "a2" : {
+                "name": "Да",
+                "correctAnswer": false
+            }
+        }
+    },
+
+    "question3": {
+        "textQuestion": "Было дело?",
+        "answers": {
+            "a1" : {
+                "name": "Нет",
+                "correctAnswer": true
+            },
+            "a2" : {
+                "name": "Да",
+                "correctAnswer": true
+            }
+        }
+    }
+}
