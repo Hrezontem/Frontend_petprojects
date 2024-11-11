@@ -11,10 +11,11 @@ window.onload = () => {
 
             //Конец теста и вывод кол-ва правильных ответов
             if ( questionContainer != undefined) {
-                var checked = document.querySelectorAll('.btn-check')
+
+                var checked = document.querySelectorAll('.btn-check');
                 checked = [...checked];
                 checked.forEach((item) => {
-                    if (item.value === 'true' && item.checked === true){
+                    if (item.value === 'true' && item.checked === true) {
                         points.count += 1;
                     }
                 })
@@ -35,30 +36,36 @@ window.onload = () => {
 
             if (qAnswers === undefined) {
                 var btnQ = document.getElementById('btn');
-                var allPoints = document.createElement('span')
-                var imgMaxPoints = document.createElement('img')
-                imgMaxPoints.setAttribute('id', 'img')
-                imgMaxPoints.setAttribute('class', 'mt-2')
-                imgMaxPoints.setAttribute('width', '300')
-                imgMaxPoints.setAttribute('height', '300')
+                var allPoints = document.createElement('span');
+                var imgMaxPoints = document.createElement('img');
+                imgMaxPoints.setAttribute('id', 'img');
+                imgMaxPoints.setAttribute('class', 'mt-2');
+                imgMaxPoints.setAttribute('width', '300');
+                imgMaxPoints.setAttribute('height', '300');
                 var WhoU;
-                allPoints.setAttribute('id', 'allPoints')
-                if(points.count === 2) {
-                    imgMaxPoints.setAttribute('src', './img/3.jpg')
-                    WhoU = 'Поздравляем, вы прогойдный мракобес'
+                var percentPoints = Math.floor(points.count / questions.length * 100);
+                allPoints.setAttribute('id', 'allPoints');
 
-                } else if (point.count === questions.length) {
-                    imgMaxPoints.setAttribute('src', './img/4.jpg')
-                    WhoU = 'Поздравляем, вы профессор Святожоп Багиров'
+                if( percentPoints >= 40 && percentPoints < 60) {
+                    imgMaxPoints.setAttribute('src', './img/3.jpg');
+                    WhoU = 'Поздравляем, вы прогойдный мракобес';
+                } else if (percentPoints >= 60 && percentPoints < 70) {
+                    imgMaxPoints.setAttribute('src', './img/4.jpg');
+                    WhoU = 'Поздравляем, вы профессор Святожоп Багиров';
+                } else  if (percentPoints > 10 && percentPoints < 40){
+                    imgMaxPoints.setAttribute('src', './img/5.jpg');
+                    WhoU = 'У вас отвалились BALLS';
+                } else if (percentPoints >= 70) {
+                    imgMaxPoints.setAttribute('src', './img/1.jpg');
+                    WhoU = 'Вы чих пыхнули зазы и теперь поголовно окружаете себя травой да травушкой-муравой';
                 } else {
-                    imgMaxPoints.setAttribute('src', './img/2.jpg')
-                    WhoU = 'У вас отвалились BALLS'
+                    imgMaxPoints.setAttribute('src', './img/1.jpg');
+                    WhoU = 'Вы на кондициях';
                 }
                 allPoints.innerHTML = `Отвечено правильно: ${points.count} ${(points.count === 1) ? 'вопрос' : (points.count > 1 && points.count < 5) ? 'вопроса' :'вопросов'} из ${questions.length} </br>
-                ${WhoU}
-                `
-                test.append(imgMaxPoints)
-                test.append(allPoints)
+                ${WhoU}`;
+                test.append(imgMaxPoints);
+                test.append(allPoints);
                 btnQ.innerText = 'Начать заново';
                 indexQ.num = 0;
                 points.count = 0;
@@ -72,13 +79,13 @@ window.onload = () => {
                         <div id="btnList" class="container d-flex justify-content-around flex-wrap gap-2">
                         </div>
                     </div>
-                `)
+                `);
                 var btnList = document.getElementById('btnList');
                 for (var q in qAnswers.answers) {
                     btnList.insertAdjacentHTML('beforeend', `
                         <input type="radio" class="btn-check" name="btnradio" id="btnradio${numAnswer}" value="${qAnswers.answers[q].correctAnswer}" autocomplete="off" checked>
                         <label class="btn btn-outline-primary" for="btnradio${numAnswer}">${qAnswers.answers[q].name}</label>
-                    `)
+                    `);
                     numAnswer++;
     
                 }

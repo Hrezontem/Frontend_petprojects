@@ -12,6 +12,7 @@ function randomColor() {
     var color = '#'
     for (var i = 0; i < 6; i++){
         color += colorHexChar[randomInteger(0,15)];
+        console.log(color)
     }
     return color;
 }
