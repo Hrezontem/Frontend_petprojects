@@ -3,30 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>Productivity</title>
   </head>
   <body>
     <header class="header">
-      <div class="container">
-        <a href="" class="header__logo logo"></a>
-        <ul class="header__list list">
-          <li class="list__menu-item">
-            <a href="" class="list__menu-link list__menu-link--active">Home</a>
-          </li>
-          <li class="list__menu-item">
-            <a href="" class="list__menu-link">Blog</a>
-          </li>
-          <li class="list__menu-item">
-            <a href="" class="list__menu-link">Features</a>
-          </li>
-          <li class="list__menu-item">
-            <a href="" class="list__menu-link">Pricing</a>
-          </li>
-          <li class="list__menu-item">
-            <a href="" class="list__menu-link">Documentation</a>
-          </li>
-        </ul>
+      <div class="container menu">
+        <div style="display: flex; align-items: center">
+          <a href="" class="header__logo logo"></a>
+          <ul class="header__list list">
+            <li class="list__menu-item">
+              <a href="" class="list__menu-link list__menu-link--active"
+                >Home</a
+              >
+            </li>
+            <li class="list__menu-item">
+              <a href="" class="list__menu-link">Blog</a>
+            </li>
+            <li class="list__menu-item">
+              <a href="" class="list__menu-link">Features</a>
+            </li>
+            <li class="list__menu-item">
+              <a href="" class="list__menu-link">Pricing</a>
+            </li>
+            <li class="list__menu-item">
+              <a href="" class="list__menu-link">Documentation</a>
+            </li>
+          </ul>
+        </div>
+
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            justify-content: flex-end;
+          "
+        >
         <div class="header__social social">
           <a href="" class="social__item"></a>
           <a href="" class="social__item"></a>
@@ -34,6 +47,8 @@
           <a href="" class="social__item"></a>
         </div>
         <a class="btn btn-get-started" href="#!">Get started</a>
+      </div>
+
       </div>
     </header>
     <main class="main">
@@ -59,95 +74,111 @@
       </section> -->
       <section class="customers">
         <div class="container">
-          <img class="customers__item" src="./img/icons/customers/customer1.png"/>
-          <img class="customers__item" src="./img/icons/customers/customer2.png"/>
-          <img class="customers__item" src="./img/icons/customers/customer3.png"/>
-          <img class="customers__item customers__item--active" src="./img/icons/customers/customer4.png"/>
-          <img class="customers__item" src="./img/icons/customers/customer5.png"/>
-
+          <img
+            class="customers__item"
+            src="./img/icons/customers/customer1.png"
+          />
+          <img
+            class="customers__item"
+            src="./img/icons/customers/customer2.png"
+          />
+          <img
+            class="customers__item"
+            src="./img/icons/customers/customer3.png"
+          />
+          <img
+            class="customers__item customers__item--active"
+            src="./img/icons/customers/customer4.png"
+          />
+          <img
+            class="customers__item"
+            src="./img/icons/customers/customer5.png"
+          />
         </div>
       </section>
       <section class="app">
-        <div class="app__inner">
-          <div class="text">
-            <span class="title">DESKTOP AND MOBILE APP</span>
-            <h2 class="sub-title"><b>Plan</b> and <b>manage</b></h2>
-            <p class="description">
-              Brute laoreet efficiendi id his, ea illum nonumes luptatum pro.
-              Usu atqui laudem an, insolens gubergren similique est cu. Et vel
-              modus congue vituperata. Solum patrioque no sea. Mea ex malis
-              mollis oporteat. Eum an expetenda consequat.
-            </p>
+        <div class="container">
+          <div class="app__main">
+            <div class="text">
+              <span class="title">DESKTOP AND MOBILE APP</span>
+              <h2 class="sub-title"><span>Plan</span> and <span>manage</span></h2>
+              <p class="description">
+                Brute laoreet efficiendi id his, ea illum nonumes luptatum pro.
+                Usu atqui laudem an, insolens gubergren similique est cu. Et vel
+                modus congue vituperata. Solum patrioque no sea. Mea ex malis
+                mollis oporteat. Eum an expetenda consequat.
+              </p>
+            </div>
+            <div class="app__buttons">
+              <button class="btn btn__view-video">View video</button>
+              <a class="btn btn__transparent" href="#">See features</a>
+            </div>
           </div>
-          <div class="app__buttons">
-            <button class="btn btn__view-video">View video</button>
-            <button class="btn btn__transparent">See features</button>
-          </div>
-          <div class="app__background"></div>
+          <img class="app__background" src="./img/illustration(2).png"></img>
         </div>
       </section>
       <section class="about">
-        <div class="text">
-          <p class="title">ABOUT US</p>
-          <h1 class="sub-title">Increase your productivity</h1>
-          <div class="features">
-            <div class="features__item">
-              <div class="features__icon"></div>
-              <h2 class="features__title">Overview</h2>
-              <p class="description">
-                Brute laoreet efficiendi id his, ea illum nonumes luptatum pro.
-              </p>
-            </div>
-            <hr />
-            <div class="features__item">
-              <div class="features__icon"></div>
-              <h2 class="features__title">Files</h2>
-              <p class="description">
-                No vim nulla vitae intellegat. Ei enim error ius, solet atomorum
-                conceptam ex has.
-              </p>
-            </div>
-            <hr />
-            <div class="features__item">
-              <div class="features__icon"></div>
-              <h2 class="features__title">Meeting chats</h2>
-              <p class="description">
-                Vim ne tacimates neglegentur. Erat diceret omittam at est.
-              </p>
-            </div>
-            <hr />
-            <div class="features__item">
-              <div class="features__icon"></div>
-              <h2 class="features__title">Save events</h2>
-              <p class="description">Nisl idque mel ea, nominati voluptatum.</p>
+        <div class="container">
+          <div class="text">
+            <span class="title">ABOUT US</span>
+            <h1 class="sub-title">Read about our app</h1>
+            <div class="features">
+              <div class="features__item">
+                <div class="features__icon"></div>
+                <h2 class="features__title">Overview</h2>
+                <p class="description">
+                  Brute laoreet efficiendi id his, ea illum nonumes luptatum pro.
+                </p>
+              </div>
+              <div class="divider"></div>
+              <div class="features__item">
+                <div class="features__icon"></div>
+                <h2 class="features__title">Files</h2>
+                <p class="description">
+                  No vim nulla vitae intellegat. Ei enim error ius, solet atomorum
+                  conceptam ex has.
+                </p>
+              </div>
+              <div class="divider"></div>
+              <div class="features__item">
+                <div class="features__icon"></div>
+                <h2 class="features__title">Meeting chats</h2>
+                <p class="description">
+                  Vim ne tacimates neglegentur. Erat diceret omittam at est.
+                </p>
+              </div>
+              <div class="divider"></div>
+              <div class="features__item">
+                <div class="features__icon"></div>
+                <h2 class="features__title">Save events</h2>
+                <p class="description">Nisl idque mel ea, nominati voluptatum.</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="about__buttons">
-          <button class="btn">Read more</button>
-          <span class="divider">
-            <hr />
-            OR
-            <hr />
-          </span>
-          <button class="btn btn-get-started">Get started</button>
+          <div class="about__buttons">
+            <a class="btn btn--red" href="#!">Read more</a>
+            <div class="divider"></div>
+            <span>OR</span>
+            <div class="divider"></div>
+            <a class="btn btn-get-started" href="#!">Get started</a>
+          </div>
         </div>
       </section>
       <section class="statistics">
-        <div class="statistics__item">
-          <div class="statistics__icon"></div>
-          <p class="statistics__count">89%</p>
-          <p class="statistics__description">
-            Customers who have increased their productivity
-          </p>
-        </div>
-        <div class="statistics__item statistics__item--light">
-          <div class="statistics__icon"></div>
-          <p class="statistics__count">3123</p>
-          <p class="statistics__description">
-            Users who have used our application
-          </p>
-        </div>
+          <div class="statistics__item">
+            <div class="statistics__icon"></div>
+            <p class="count">89%</p>
+            <p class="description">
+              Customers who have increased their productivity
+            </p>
+          </div>
+          <div class="statistics__item statistics__item--light">
+            <div class="statistics__icon"></div>
+            <p class="count">3123</p>
+            <p class="description">
+              Users who have used our application
+            </p>
+          </div>
       </section>
       <section class="resources">
         <div class="resources__inner">
@@ -278,8 +309,8 @@
     </main>
     <footer class="footer">
       <!-- TODO: ПЕРЕДЕЛАТЬ ПОД FOOTER  -->
-       <div class="container">
-        <div class="footer__menu">
+      <div class="container menu">
+        <div style="display: flex; align-items: center">
           <div class="footer__logo logo"></div>
           <ul class="footer__list list">
             <li class="list__menu-item">
@@ -298,6 +329,15 @@
               <a href="" class="list__menu-link">Documentation</a>
             </li>
           </ul>
+        </div>
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            justify-content: flex-end;
+          "
+        >
           <div class="footer__social social">
             <a href="" class="social__item"></a>
             <a href="" class="social__item"></a>
@@ -306,8 +346,8 @@
           </div>
           <a href=" " class="btn btn-get-started">Get started</a>
         </div>
-        <span>Copyright © 2018 by Random site</span>
-       </div>
+        <span class="copyright">Copyright © 2018 by Random site</span>
+      </div>
     </footer>
   </body>
 </html>
