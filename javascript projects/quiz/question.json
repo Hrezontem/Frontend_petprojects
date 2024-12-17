@@ -1,0 +1,167 @@
+{
+    "question1": {
+        "textQuestion": "2+2 = 4?",
+        "answers": {
+            "a1" : {
+                "name": "Да",
+                "correctAnswer": true
+            },
+            "a2" : {
+                "name": "Нет",
+                "correctAnswer": false
+            },
+            "a3" : {
+                "name": "Ты кто",
+                "correctAnswer": false
+            },
+            "a4" : {
+                "name": "Было дело",
+                "correctAnswer": true
+            }
+        }
+    },
+    "question2": {
+        "textQuestion": "Тебя ебали в детстве?",
+        "answers": {
+            "a1" : {
+                "name": "Нет",
+                "correctAnswer": true
+            },
+            "a2" : {
+                "name": "Да",
+                "correctAnswer": false
+            },
+            "a3" : {
+                "name": "Частично",
+                "correctAnswer": false
+            },
+            "a4" : {
+                "name": "А тебя ебёт?",
+                "correctAnswer": true
+            }
+        }
+    },
+
+    "question3": {
+        "textQuestion": "Уверен?",
+        "answers": {
+            "a1" : {
+                "name": "Иди нахуй",
+                "correctAnswer": true
+            },
+            "a2" : {
+                "name": "Я тебя ща выебу",
+                "correctAnswer": true
+            }
+        }
+    },
+    "question4": {
+        "textQuestion": "Я РУССКИЙ",
+        "answers": {
+            "a1" : {
+                "name": "Я ИДУ ДО КОНЦААААААА",
+                "correctAnswer": true
+            },
+            "a2" : {
+                "name": "ZZZ ГОЙДА ЗА НАШИХ СВОИХ НЕ БРОСАЕМ",
+                "correctAnswer": true
+            }
+        }
+    },
+    "question5": {
+        "textQuestion": "Когда началась вторая мировая война?",
+        "answers": {
+            "a1" : {
+                "name": "С раздела польши",
+                "correctAnswer": false
+            },
+            "a2" : {
+                "name": "Что",
+                "correctAnswer": true
+            },
+
+            "a3" : {
+                "name": "Давайте я буду задавать вопросы, а вы отвечать",
+                "correctAnswer": false
+            }
+        }
+    },
+    "question6": {
+        "textQuestion": "Хотели бы вы сделать коктейль молотова?",
+        "answers": {
+            "a1" : {
+                "name": "Да",
+                "correctAnswer": true
+            },
+            "a2" : {
+                "name": "...",
+                "correctAnswer": false
+            },
+            "a3" : {
+                "name": "Нет",
+                "correctAnswer": true
+            }
+        }
+    },
+    "question7": {
+        "textQuestion": "Ладно, давай серьёзно. Что такое бипки?",
+        "answers": {
+            "a1" : {
+                "name": "Отсосёшь скажу",
+                "correctAnswer": true
+            },
+            "a2" : {
+                "name": "Не знаю",
+                "correctAnswer": true
+            }
+        }
+    },
+    "question8": {
+        "textQuestion": "У другого жителя Убежища 101 есть первый выпуск комикса «Грогнак-Варвар». Вы очень хотите его заполучить. Как лучше всего это сделать? ",
+        "answers": {
+            "a1" : {
+                "name": "Убить этого жителя из пистолета — старших надо слушаться.",
+                "correctAnswer": false
+            },
+            "a2" : {
+                "name": "Предложить самое ценное своё имущество в уплату за жизнь потенциальной жертвы.",
+                "correctAnswer": false
+            },
+            "a3" : {
+                "name": "Попросить у бабушки миниган. А то ещё промажете ненароком. ",
+                "correctAnswer": true
+            },
+            "a4" : {
+                "name": "Выплеснуть чай бабушке в лицо.",
+                "correctAnswer": true
+            }
+        }
+    },
+    "question9": {
+        "textQuestion": "Бля...",
+        "answers": {
+            "a1" : {
+                "name": "Следующий вопрос",
+                "correctAnswer": false
+            }
+        }
+    },
+    "question10": {
+        "textQuestion": "Кто свистит тот...",
+        "answers": {
+            "a1" : {
+                "name": "Трансвистит",
+                "correctAnswer": false
+            },
+            "a2" : {
+                "name": "Коля",
+                "correctAnswer": true
+            },
+            "a3" : {
+                "name": "Аоаоаоа",
+                "correctAnswer": false
+            }
+        }
+    }
+    
+}

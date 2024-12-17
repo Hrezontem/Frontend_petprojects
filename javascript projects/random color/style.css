@@ -1,0 +1,29 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s ease;
+}
+
+.btn {
+    padding: 20px;
+    font-size: 30px;
+    background-color: rgb(86, 204, 255);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    transition: all .2s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(36, 115, 149);
+
+}
+
+.btn:active {
+    background-color: rgb(47, 120, 255);
+
+}

@@ -3,6 +3,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const resetBtn = document.querySelector('.reset');
     const text = document.querySelector('.text')
     let turn = false;
+    let draw = false;
+    let count = 0;
     let endGame = false;
     let indexGameItem = 0;
     let gameMapDiagonal = []; 
@@ -29,6 +31,8 @@ document.addEventListener("DOMContentLoaded", () => {
         item.addEventListener('click', function clickTTT(){
             if (flag === false && endGame === false){
                 item.innerHTML = (turn == false) ? 'X': 'O'
+                count++;
+                console.log(count)
                 turn = !turn;
                 for (var i = 0; i < 3; i++){
                     if ((gameMapHorizontal[i].every(v => v.innerHTML === 'X')) || (gameMapHorizontal[i].every(v => v.innerHTML === 'O'))) {
@@ -46,26 +50,40 @@ document.addEventListener("DOMContentLoaded", () => {
                     else if ((gameMapDiagonalReverse.every(v => v.innerHTML === 'X'))  || (gameMapDiagonalReverse.every(v => v.innerHTML === 'O')) ) {
                         endGame = true
                         break
+                    } else if(count >= 9){
+                        draw = true
+                        break
+                        
                     }
+                    
                 }
                 flag = true
             }
-            if(endGame === true){
+            if(endGame === true && draw === false){
                 if(turn === true) {
                     text.innerHTML = 'Выиграл X'
+                    console.log(count)
                 }
-                if(turn === false) {
+                else if(turn === false) {
                     text.innerHTML = 'Выиграл O'
+                    console.log(count)
+
                 }
+
+            } else if (draw === true) {
+                text.innerHTML = 'Ничья'
+
             }
 
         })
         resetBtn.addEventListener('click', () => {
             turn = false;
             flag = false;
+            draw = false;
             endGame = false
             text.innerHTML = ''
             item.innerHTML = '';
+            count = 0
         })
     })
     

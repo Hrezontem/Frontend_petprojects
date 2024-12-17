@@ -1,0 +1,38 @@
+ main {
+    height: 100vh;
+ }
+ 
+input {
+    border-radius: 10px;
+    width: 60px;
+    text-align: center;
+    font-size: 40px;
+    border: none;
+}
+
+ body {
+    height: 100vh;
+}
+
+.time-container {
+    width: fit-content;
+    border: gray 2px solid;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.dots {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+}
+
+.dot {
+
+    width: 7px;
+    height: 7px;
+    background: gray;
+    border-radius: 100px;
+    
+}
