@@ -59,18 +59,18 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
                 flag = true
             }
-            if(endGame === true && draw === false){
-                if(turn === true) {
+            if(endGame && !draw){
+                if(turn) {
                     text.innerHTML = 'Выиграл X'
                     console.log(count)
                 }
-                else if(turn === false) {
+                else if(!turn) {
                     text.innerHTML = 'Выиграл O'
                     console.log(count)
 
                 }
 
-            } else if (draw === true) {
+            } else if (draw) {
                 text.innerHTML = 'Ничья'
 
             }
