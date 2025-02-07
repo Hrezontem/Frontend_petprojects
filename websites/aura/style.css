@@ -209,6 +209,7 @@ body{
 .hero__buttons {
   display: flex;
   gap: 32px;
+  flex-wrap: wrap;
 
 }
 
@@ -286,6 +287,7 @@ body{
 .auction__inner {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 
 }
 
@@ -299,6 +301,7 @@ body{
   display: flex;
   flex-direction: column;
   gap: 32px;
+  flex-wrap: wrap;
 
 }
 
@@ -322,6 +325,7 @@ body{
 .sticker__block {
   display: flex;
   gap: 32px;
+  flex-wrap: wrap;
 
 }
 
@@ -913,9 +917,28 @@ body{
 /* Adaptive */
 
 
+.auction-list__adaptive {
+  display: none;
+}
+
 @media (max-width: 320px) {
   
-  .header__menu-link {
+  .mg-lr {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+  
+  .header__inner  {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero__inner {
+    position: relative;
+  }
+
+
+
+  .menu-link {
     font-size: 16px;
   }
   
@@ -923,11 +946,91 @@ body{
     display: none;
   
   }
+  
+  .header__menu {
+    display: none;
+  }
+
+  .hero {
+    width: auto;
+    height: fit-content;
+    background-image: url('./img/stickers-hero.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 400px;
+  }
+
+  .hero__text-header {
+    word-break: keep-all;
+    width: auto;
+    font-size: 35px;
+  }
+
+  .hero__buttons {
+    flex-direction: column;
+  }
+
+  .auction-list__inner {
+    display: none;
+  }
 
   .header__button-adaptive {
     display: block;
-
+    justify-self: end;
   }
+  .text-header {
+    font-size: 35px;
+  }
+
+  .auction-sticker {
+    width: 296px;
+    height: 296px;
+  }
+  
+  .auction-timer__img {
+    display: none;
+  }
+
+  .footer__inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer__menu{
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+
+  .footer__logo {
+    align-self: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+
+  .top-sale__list {
+    display: none;
+  }
+  .section__auction-list {
+    display: none;
+  }
+  .slider {
+    display: none;
+  }
+
+  .section__feedback {
+    display: none;
+  }
+  
+  .section__top-sale {
+    display: none;
+  }
+
+  .form-subscribe {
+    display: none;
+  }
+
+
 }
 
 /* Footer */
@@ -941,9 +1044,7 @@ body{
   box-sizing: border-box;
   position: relative;
   background-color: var(--primary);
-  padding: 20px 320px 20px 320px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
 }
 
 .footer__menu-link:hover {
